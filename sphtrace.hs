@@ -164,6 +164,6 @@ scene p = minimum [translate (2, -0.5, 0) (sphere 0.6) p,
          mandel (Vec re _ im) = mandel_dist 256 (re :+ im)
 
 main :: IO ()
-main = B.writeFile "out.ppm" $ to_ppm $ render scene cam light 0.03 42
+main = B.writeFile "dist/sphtrace-hs.ppm" $ to_ppm $ render scene cam light 0.03 42
    where cam = calc_camera 640 480 60 (Vec 3 3 5) (Vec 0 (-1) 0) (Vec 0 1 0)
          light = Light (Vec 3 2 2) 7
