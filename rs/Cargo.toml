@@ -1,0 +1,7 @@
+[package]
+name = "sphtrace"
+version = "0.1.0"
+authors = ["rf"]
+[dependencies]
+nalgebra = "*"
+num = "*"
